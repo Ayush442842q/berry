@@ -1,5 +1,5 @@
 diff --git a/dist/source/as-promise/index.js b/dist/source/as-promise/index.js
-index 9575c09d653037596ddf945afccedbbc672c4ee6..0319f729736c7d3f8eef3aee458e5cf5884cdce9 100644
+index 9575c09d653037596ddf945afccedbbc672c4ee6..e76be77add047033f8618164aa4f03e372d4ac8f 100644
 --- a/dist/source/as-promise/index.js
 +++ b/dist/source/as-promise/index.js
 @@ -29,6 +29,7 @@ const proxiedRequestEvents = [
@@ -22,11 +22,10 @@ index 9575c09d653037596ddf945afccedbbc672c4ee6..0319f729736c7d3f8eef3aee458e5cf5
              globalRequest = request;
              request.once('response', async (response) => {
                  var _a;
-@@ -118,12 +122,15 @@ function asPromise(normalizedOptions) {
+@@ -118,12 +122,14 @@ function asPromise(normalizedOptions) {
                      return;
                  }
                  globalResponse = response;
-+                request.destroy();
 +                promiseSettled = true;
                  resolve(request.options.resolveBodyOnly ? response.body : response);
              });
@@ -38,7 +37,7 @@ index 9575c09d653037596ddf945afccedbbc672c4ee6..0319f729736c7d3f8eef3aee458e5cf5
                  const { options } = request;
                  if (error instanceof types_1.HTTPError && !options.throwHttpErrors) {
                      const { response } = error;
-@@ -136,6 +143,9 @@ function asPromise(normalizedOptions) {
+@@ -136,6 +142,9 @@ function asPromise(normalizedOptions) {
              const previousBody = request.options.body;
              request.once('retry', (newRetryCount, error) => {
                  var _a, _b;

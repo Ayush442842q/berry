@@ -10273,7 +10273,7 @@ const RAW_RUNTIME_STATE =
             "npm:0.23.0"\
           ]],\
           ["fast-glob", "npm:3.3.2"],\
-          ["got", "patch:got@npm%3A11.8.2#~/.yarn/patches/got-npm-11.8.2-c1eb105458.patch::version=11.8.2&hash=ecadc2"],\
+          ["got", "patch:got@npm%3A11.8.2#~/.yarn/patches/got-npm-11.8.2-c1eb105458.patch::version=11.8.2&hash=15933f"],\
           ["hpagent", "npm:1.2.0"],\
           ["micromatch", "npm:4.0.5"],\
           ["p-limit", "npm:2.2.0"],\
@@ -26174,8 +26174,8 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["got", [\
-      ["patch:got@npm%3A11.8.2#~/.yarn/patches/got-npm-11.8.2-c1eb105458.patch::version=11.8.2&hash=ecadc2", {\
-        "packageLocation": "./.yarn/cache/got-patch-7924b6ed33-f29420ad2e.zip/node_modules/got/",\
+      ["patch:got@npm%3A11.8.2#~/.yarn/patches/got-npm-11.8.2-c1eb105458.patch::version=11.8.2&hash=15933f", {\
+        "packageLocation": "./.yarn/cache/got-patch-dd5a6af1c8-0b2b8737ac.zip/node_modules/got/",\
         "packageDependencies": [\
           ["@sindresorhus/is", "npm:4.6.0"],\
           ["@szmarczak/http-timer", "npm:4.0.5"],\
@@ -26184,7 +26184,7 @@ const RAW_RUNTIME_STATE =
           ["cacheable-lookup", "npm:5.0.3"],\
           ["cacheable-request", "npm:7.0.1"],\
           ["decompress-response", "npm:6.0.0"],\
-          ["got", "patch:got@npm%3A11.8.2#~/.yarn/patches/got-npm-11.8.2-c1eb105458.patch::version=11.8.2&hash=ecadc2"],\
+          ["got", "patch:got@npm%3A11.8.2#~/.yarn/patches/got-npm-11.8.2-c1eb105458.patch::version=11.8.2&hash=15933f"],\
           ["http2-wrapper", "npm:1.0.0-beta.5.2"],\
           ["lowercase-keys", "npm:2.0.0"],\
           ["p-cancelable", "npm:2.0.0"],\
@@ -31539,7 +31539,7 @@ const RAW_RUNTIME_STATE =
       ["npm:8.1.1", {\
         "packageLocation": "./.yarn/cache/package-json-npm-8.1.1-0db857e5f3-d97ce9539e.zip/node_modules/package-json/",\
         "packageDependencies": [\
-          ["got", "patch:got@npm%3A11.8.2#~/.yarn/patches/got-npm-11.8.2-c1eb105458.patch::version=11.8.2&hash=ecadc2"],\
+          ["got", "patch:got@npm%3A11.8.2#~/.yarn/patches/got-npm-11.8.2-c1eb105458.patch::version=11.8.2&hash=15933f"],\
           ["package-json", "npm:8.1.1"],\
           ["registry-auth-token", "npm:5.0.2"],\
           ["registry-url", "npm:6.0.1"],\

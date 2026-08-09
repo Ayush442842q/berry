@@ -11592,7 +11592,7 @@ __metadata:
 
 "got@patch:got@npm%3A11.8.2#~/.yarn/patches/got-npm-11.8.2-c1eb105458.patch":
   version: 11.8.2
-  resolution: "got@patch:got@npm%3A11.8.2#~/.yarn/patches/got-npm-11.8.2-c1eb105458.patch::version=11.8.2&hash=ecadc2"
+  resolution: "got@patch:got@npm%3A11.8.2#~/.yarn/patches/got-npm-11.8.2-c1eb105458.patch::version=11.8.2&hash=15933f"
   dependencies:
     "@sindresorhus/is": "npm:^4.0.0"
     "@szmarczak/http-timer": "npm:^4.0.5"
@@ -11605,7 +11605,7 @@ __metadata:
     lowercase-keys: "npm:^2.0.0"
     p-cancelable: "npm:^2.0.0"
     responselike: "npm:^2.0.0"
-  checksum: 10/f29420ad2eae1f2a1d4e40bf3ba0d3567148b45317309a69c3f21c729f4f5de54dea0cd23bf8deccfc968426184ee6c7d9f199fbddc6860f2e556cc2a72efd5a
+  checksum: 10/0b2b8737ac1b4f8bacef39c2f5cf940e836899e340e26d5719cd81054666441553307f2c4d72b94f47ca75cbc5035eb4b0cc0389e52e631cdf723feaac912d20
   languageName: node
   linkType: hard
 
