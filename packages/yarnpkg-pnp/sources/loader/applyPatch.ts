@@ -272,8 +272,8 @@ export function applyPatch(pnpapi: PnpApi, opts: ApplyPatchOptions) {
     return false;
   };
 
-  const originalModuleCompile = Module.prototype._compile;
-  Module.prototype._compile = function (this: NodeModule, content: string, filename: string) {
+  const originalModuleCompile = (Module.prototype as any)._compile;
+  (Module.prototype as any)._compile = function (this: NodeModule, content: string, filename: string) {
     const patch = `if (typeof require !== 'undefined') { if (!require.cache) require.cache = Module._cache; if (!require.extensions) require.extensions = Module._extensions; };`;
     let patchedContent = content;
     if (content.startsWith(`#!`)) {
@@ -286,6 +286,7 @@ export function applyPatch(pnpapi: PnpApi, opts: ApplyPatchOptions) {
     }
     return originalModuleCompile.call(this, patchedContent, filename);
   };
+
 
   // @ts-expect-error - Missing types
   if (!process.features.require_module) {
